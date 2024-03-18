@@ -5,6 +5,10 @@ function esPalindromo(string) {
    // IMPORTANTE: Un palíndromo es una palabra o frase
    // que se lee igual hacia adelante que hacia atrás.
    // Tu código:
+   let separa = string.split("");
+   let nuevo= separa.reverse().join("");
+   if(string==nuevo)return true;
+   return false
 }
 
 module.exports = esPalindromo;
